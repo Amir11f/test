@@ -28,9 +28,10 @@ export default function DashboardPage() {
 
   return (
     <div className={styles.container}>
-      <h1>Welcome to the Dashboard</h1>
-      <p>
-        {user.userName} {user.phone}
+      <h1 className={styles.titleScale}>Welcome to the Dashboard</h1>
+      <p className={styles.column}>
+        {user.userName}
+        {user.phone}
       </p>
     </div>
   );

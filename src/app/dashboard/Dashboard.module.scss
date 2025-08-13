@@ -2,3 +2,34 @@
   padding: 2rem;
   text-align: center;
 }
+
+.container {
+  --aspect-ratio: 1.33;
+  --login-box-color: #272727;
+  --input-color: #3a3a3a;
+  --button-color: #373737;
+  --footer-color: rgba(255, 255, 255, 0.5);
+
+  background: var(--login-box-color);
+  border-radius: 24px;
+  width: calc(var(--form-width) + 1px);
+  height: calc(var(--form-width) * var(--aspect-ratio) + 1px);
+  z-index: 8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2),
+    0 0 8px rgba(255, 255, 255, 0.1), 0 0 16px rgba(255, 255, 255, 0.08);
+}
+
+.titleScale {
+  animation: scale 4s ease-in-out infinite;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(2);
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

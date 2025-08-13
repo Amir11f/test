@@ -51,7 +51,7 @@ export default function AuthPage() {
             error={errors.phone?.message}
           />
 
-          <Button type="submit">Sign In</Button>
+          <Button type="submit">Log In</Button>
         </form>
       </div>
     </div>
