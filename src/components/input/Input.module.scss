@@ -1,0 +1,26 @@
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.input {
+  width: 95%;
+  height: 40px;
+
+  position: relative;
+  left: 7px;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  background: var(--input-color);
+  outline: none;
+  font-size: 14px;
+}
+.inputT {
+  width: 100%;
+}
+
+.input:focus {
+  border: 1px solid transparent;
+}
